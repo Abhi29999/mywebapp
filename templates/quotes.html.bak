@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quotes</title>
+</head>
+<body>
+    <h1>Quotes!</h1>
+	<h2>The Beginning of Infinity - David Deutsch</h2>
+	<p>If knowledge is finite then it doesn't matter how big it's magnitude is,<br> you can get to it's end with time but if knowledge is infinite then it doesn't matter how much progress you make,<br> you will always remain at it's beginning.</p>
+	<ul>
+		{% for i in loccafes %}
+        <li>Cafe: {{i.Name}} - Location: {{i.Location}} </li>
+		{% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+    <h1>Books I liked</h1>
+	<ul>
+		{% for i in books %}
+        <li>Id: {{i.Id}}    -    <b>Name:</b> {{i.Name}}    -    <b>Author:</b> {{i.Author}}    -    <b>Rating:</b> {{i.Rating}} </li>
+		{% endfor %}
+    </ul>
+	<br><br><br><br><br><br>
+	<a href="http://localhost:9000/" class="button">Home</a>
+</body>
+</html>

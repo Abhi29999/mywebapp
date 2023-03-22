@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abhimanyu Lalwani's good stuff</title>
+</head>
+<body>
+    <h1>Hello! Welcome to my Page!</h1>
+	<h2>I plan to put stuff I am interested in or thinking about on this website</h2>
+	<br><br><br>
+	<h3>Check it out!</h3>
+	<a href="http://localhost:9000/quotes" class="button">Quotes</a>
+	<br><br>
+	<a href="http://localhost:9000/books" class="button">Books</a>
+	<br><br>
+	<a href="http://localhost:9000/bookstable" class="button">BooksTable</a>
+	<br><br>
+	<a href="http://localhost:9000/gallery" class="button">BooksGallery</a>
+	<ul>
+		{% for i in loccafes %}
+        <li>Cafe: {{i.Name}} - Location: {{i.Location}} </li>
+		{% endfor %}
+    </ul>
+</body>
+</html>

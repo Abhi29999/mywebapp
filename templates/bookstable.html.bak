@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+    <h1>Books I liked</h1>
+	<table>
+	  <tr>
+	    <th>Id</th>
+		<th>Name</th>
+		<th>Author</th>
+		<th>Rating</th>
+	  </tr>
+		{% for i in books %}
+        <tr>
+		  <td>{{i.Id}}</td><td>{{i.Name}}</td><td>{{i.Author}}</td><td>{{i.Rating}}</td>
+		</tr>
+		{% endfor %}
+    </table>
+	<br><br><br><br><br><br>
+	<a href="http://localhost:9000/" class="button">Home</a>
+</body>
+</html>
